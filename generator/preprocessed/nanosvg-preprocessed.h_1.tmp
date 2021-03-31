@@ -1,0 +1,6 @@
+typedef struct NSVGrasterizer NSVGrasterizer;
+NSVGrasterizer* nsvgCreateRasterizer();
+void nsvgRasterize(NSVGrasterizer* r,
+NSVGimage* image, float tx, float ty, float scale,
+unsigned char* dst, int w, int h, int stride);
+void nsvgDeleteRasterizer(NSVGrasterizer*);
